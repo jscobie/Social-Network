@@ -1,5 +1,5 @@
 {
-  "name": "18-Social-Network",
+  "name": "Social-Network",
   "version": "1.0.0",
   "description": "Module 18 Bootcamp NoSQL MongoDB - Social Network",
   "main": "index.js",
@@ -11,7 +11,11 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^6.0.13"
+    "eslint": "^8.30.0",
+    "prettier": "^2.8.1",
+    "mongoose": "^6.0.13",
+    "eslint-config-prettier": "^8.5.0",
+    "moment": "^2.29.4"
   },
   "devDependencies": {
     "nodemon": "^2.0.9"
