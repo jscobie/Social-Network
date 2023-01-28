@@ -5,12 +5,13 @@
 
 ## Description
 
+This is a Social Network API, built so we can test NoSQL API builds. We previously learned MySQL and its Sequelize process and this project focuses on how NoSQL and MongoDB compares and how it works.
 
+The basics behind our Social Network API is to allow us to test what would be the backend of a Social Network where users can post thoughts, people can add friends, and react to others posts.
 
 ### Required links for review and grading submission
-[Github Repository Link](https://github.com/jscobie/TechBlogMVC)<br>
-[Deployed Website Application (Heroku deployment)](https://warm-shore-33539.herokuapp.com/)
-[Walkthrough video of all functions working in the Heroku deployment](https://drive.google.com/file/d/17PyOQdyCGDMOmc5Rplk9YAIA51g2lZog/view)
+[Github Repository Link](https://github.com/jscobie/Social-Network)<br>
+[Walkthrough video of all functions working in the Heroku deployment]()
 
 ## Table of Contents
 
@@ -30,21 +31,11 @@ git clone git@github.com:jscobie/Social-Network.git
 ```
 **2. You'll need to run to install the node required dependencies after you clone the install by running:**
 ```
-npm install
+npm i
 ```
-**3. You will need to make an .env file to handle the MySQL connection, an example file (.env.EXAMPLE) has been included for you to reference. Contents of .env.EXAMPLE are:**
-```
-DB_NAME='techblog_db'
-DB_USER=''
-DB_PASSWORD=''
-```
-**4. You will then need to run the following commands in your MySQL server command line to build the database and tables and then seed/populate the tables needed:**
-```
-- mysql -u root -p
-- <enter password>
-- SOURCE db/schema.sql
-```
-**5. You will need to seed the database:**
+**3. You will need to install MongoDB and Compass**
+
+**4. You will need to seed the database:**
 ```
 npm run seed
 ```
@@ -52,7 +43,7 @@ npm run seed
 ```
 npm start
 ```
-**7. Open a browser to test using http://localhost:3001**
+**7. Open Insomnia to build and test routes**
 
 ## Usage
 
@@ -63,17 +54,20 @@ Read more about [MIT license](https://opensource.org/licenses/MIT).
 
 ## Tests
 
-
+Review walkthrough animations/videos to see Insomnia testing required routes.
 
 ## Credits
 
 Credit to the MSU Bootcamp and instructors for training and training materials to resolve some of these issues.<br>
 *Programs, packages used:*<br>
 [Node.js](https://nodejs.org/en/)<br>
-
+[MongoDB](https://www.mongodb.com/)<br>
+[Compass, the GUI for MongoDB](https://www.mongodb.com/products/compass)<br>
+[Express](https://www.npmjs.com/package/express)<br>
+[Mongoose](https://www.npmjs.com/package/mongoose)<br>
+[Nodemon](https://www.npmjs.com/package/nodemon)<br>
 [Eslint](https://www.npmjs.com/package/eslint)<br>
 [prettier](https://www.npmjs.com/package/prettier)<br>
-[Heroku](https://www.heroku.com/)<br>
 
 ## Questions:
 *Use the following options to contact me for questions:*<br>
