@@ -1,7 +1,7 @@
 {
-  "name": "26-Stu_Mongoose-CRUD",
+  "name": "18-Social-Network",
   "version": "1.0.0",
-  "description": "Reverse engineer developer activity for CRUD methods in Mongoose",
+  "description": "Module 18 Bootcamp NoSQL MongoDB - Social Network",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
