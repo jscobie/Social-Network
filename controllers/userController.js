@@ -80,8 +80,9 @@ module.exports = {
           ? res
             .status(404)
             .json({ message: 'Error: User not found.' })
-            // include BONUS: Remove a user's associated thoughts when deleted.
+            // ******************* include BONUS: Remove a user's associated thoughts when deleted code:
           : Thought.deleteMany({ _id: { $in: user.thoughts } })
+            // ******************* end BONUS.
       )
       .then((thought) =>
         !thought

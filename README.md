@@ -11,7 +11,36 @@ The basics behind our Social Network API is to allow us to test what would be th
 
 ### Required links for review and grading submission
 [Github Repository Link](https://github.com/jscobie/Social-Network)<br>
-[Walkthrough video of all functions working in the Heroku deployment]()
+[Walkthrough video of all functions working in the Heroku deployment](https://drive.google.com/file/d/1tMJ7ckVqE6uzh23eMInoEqe0Q-ZVlWzv/view)
+Code snippet of BONUS requirement to delete thoughts of user so they are not orphaned (line 84 un userController.js):
+```
+  // Delete user by id
+  deleteUser(req, res) {
+    User.findOneAndRemove({ _id: req.params.userId })
+      .then((user) =>
+        !user
+          ? res
+            .status(404)
+            .json({ message: 'Error: User not found.' })
+            // ******************* include BONUS: Remove a user's associated thoughts when deleted code:
+          : Thought.deleteMany({ _id: { $in: user.thoughts } })
+            // ******************* end BONUS.
+      )
+      .then((thought) =>
+        !thought
+          ? res
+            .status(404)
+            .json({ message: 'Complete: User deleted, no thoughts exist to delete.' })
+          : res.json({
+            message: 'Complete: User and their thoughts deleted.',
+          })
+      )
+      .catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  },
+  ```
 
 ## Table of Contents
 

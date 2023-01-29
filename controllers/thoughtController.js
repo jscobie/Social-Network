@@ -52,7 +52,6 @@ module.exports = {
             .json({ message: 'Error: User not found.' })
           : res.json({ thought: 'Complete: Thought created' })
       )
-      .then((thought) => res.json(thought))
       .catch((err) => res.status(500).json(err));
   },
 
