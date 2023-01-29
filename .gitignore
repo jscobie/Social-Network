@@ -2,6 +2,7 @@
 _provided_files/
 .env
 .prettierignore
+.eslintignore
 
 # Logs
 logs
