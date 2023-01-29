@@ -11,7 +11,8 @@ The basics behind our Social Network API is to allow us to test what would be th
 
 ### Required links for review and grading submission
 [Github Repository Link](https://github.com/jscobie/Social-Network)<br>
-[Walkthrough video of all functions working in the Heroku deployment](https://drive.google.com/file/d/1tMJ7ckVqE6uzh23eMInoEqe0Q-ZVlWzv/view)
+[Walkthrough video of install, seed, and starting for normal and nodemon dev](https://www.loom.com/share/3ca1026b38d4466989dfc176037bb64d)<br>
+[Walkthrough video of all Insomnia Routes being tested](https://drive.google.com/file/d/1tMJ7ckVqE6uzh23eMInoEqe0Q-ZVlWzv/view)<br>
 Code snippet of BONUS requirement to delete thoughts of user so they are not orphaned (line 84 un userController.js):
 ```
   // Delete user by id
